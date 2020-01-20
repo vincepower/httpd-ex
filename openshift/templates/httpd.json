@@ -195,7 +195,10 @@
                 },
                 "resources": {
                     "limits": {
-                        "memory": "${MEMORY_LIMIT}"
+                        "cpu": "${CPU_LIMIT}"
+                    }
+                    "requests": {
+                        "cpu": "0.1"
                     }
                 },
                 "env": [
@@ -223,11 +226,11 @@
       "value": "openshift"
     },
     {
-      "name": "MEMORY_LIMIT",
-      "displayName": "Memory Limit",
-      "description": "Maximum amount of memory the container can use.",
+      "name": "CPU_LIMIT",
+      "displayName": "CPU Limit",
+      "description": "Maximum amount of CPU cores the container can use.",
       "required": true,
-      "value": "512Mi"
+      "value": "0.5"
     },
     {
       "name": "SOURCE_REPOSITORY_URL",
