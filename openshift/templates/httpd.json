@@ -198,7 +198,7 @@
                         "cpu": "${CPU_LIMIT}"
                     }
                     "requests": {
-                        "cpu": "0.1"
+                        "cpu": "100m"
                     }
                 },
                 "env": [
@@ -228,16 +228,16 @@
     {
       "name": "CPU_LIMIT",
       "displayName": "CPU Limit",
-      "description": "Maximum amount of CPU cores the container can use.",
+      "description": "Maximum amount of milli-CPU the container can use.",
       "required": true,
-      "value": "0.5"
+      "value": "300m"
     },
     {
       "name": "SOURCE_REPOSITORY_URL",
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/sclorg/httpd-ex.git"
+      "value": "https://github.com/vincepower/httpd-ex.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
